@@ -65,8 +65,8 @@ public class ChangePassword extends JFrame {
                     System.out.println("update password name " + name);
                     System.out.println("update password");
 
-                    Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/swing_demo",
-                        "root", "root");
+                    Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/swingd",
+                        "root", "qwertyuiop@1");
 
                     PreparedStatement st = (PreparedStatement) con
                         .prepareStatement("Update student set password=? where name=?");
